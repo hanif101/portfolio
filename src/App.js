@@ -9,10 +9,11 @@ import Projects from './components/main/Projects.js'
 const App = () => {
   return (
     <Fragment>
+      <h1>Version2</h1>
       <Route exact path='/'>
         <Main />
       </Route>
-      
+
       <Route exact path='/about'>
         <About />
       </Route>

@@ -1,0 +1,125 @@
+/* eslint-disable */
+import React, { Fragment, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
+import { Modal, Button, Group } from '@mantine/core'
+
+import '../../all-style/projects.scss'
+import tictactoe_img from '../../images/tictactoe.png'
+import ouichat_img from '../../images/ouichat.png'
+import placefinder_img from '../../images/placefinder.png'
+import TicTacToe from '../shared/TicTacToe'
+import PlaceFinder from '../shared/PlaceFinder'
+import OuiChat from '../shared/OuiChat'
+
+const Projects = () => {
+  const [state, setState] = useState(false)
+  const [tictactoe, setTictactoe] = useState(false)
+  const [placefinder, setPlacefinder] = useState(false)
+  const [ouichat, setOuichat] = useState(false)
+  
+
+  const handleModalTicTacToe = () => {
+    return <>{console.log('hello')}</>
+  }
+  return (
+    <Fragment>
+      <div id='wrapper'>
+        <div className='header'>
+          <h1>Projects</h1>
+        </div>
+
+        <div className='body'>
+          <>
+            <Modal
+              opened={ouichat}
+              onClose={() => setOuichat(false)}
+              transition='fade'
+              transitionDuration={600}
+              transitiontimingfunction='ease'
+              size='70vw'
+              centered
+            >
+              <OuiChat/>
+            </Modal>
+
+            <Group position='center'>
+              <div id='ouichat' onClick={() => setOuichat(true)}>
+                <div className='place-finder-header'>
+                  <h2>Oui Chat</h2>
+                </div>
+
+                <div className='ouichat-body'>
+                  <span>
+                    <img src={ouichat_img} alt='project3' />
+                  </span>
+                </div>
+              </div>
+            </Group>
+          </>
+
+          <>
+            <Modal
+              opened={placefinder}
+              onClose={() => setPlacefinder(false)}
+              transition='fade'
+              transitionDuration={600}
+              transitiontimingfunction='ease'
+              size='65vw'
+              centered
+            >
+              <PlaceFinder/>
+            </Modal>
+
+            <Group position='center'>
+              <div id='place-finder' onClick={() => setPlacefinder(true)}>
+                <div className='place-finder-header'>
+                  <h2>Place Finder</h2>
+                </div>
+                <div className='place-finder-body'>
+                  <span>
+                    <img src={placefinder_img} alt='project2' />
+                  </span>
+                </div>
+              </div>
+            </Group>
+          </>
+
+    
+          <>
+            <Modal
+              opened={tictactoe}
+              onClose={() => setTictactoe(false)}
+              transition='fade'
+              transitionDuration={600}
+              transitiontimingfunction='ease'
+              size='40rem'
+              centered
+            >
+              <TicTacToe />
+            </Modal>
+
+            <Group position='center'>
+              <div id='tictactoe' onClick={() => setTictactoe(true)}>
+                <div className='tictactoe-header'>
+                  <h2>Tic Tac Toe</h2>
+                </div>
+
+                <div className='tictactoe-body'>
+                  <span>
+                    <img
+                      style={{ height: '200px', width: '250px' }}
+                      src={tictactoe_img}
+                      alt='project1'
+                    />
+                  </span>
+                </div>
+              </div>
+            </Group>
+          </>
+        </div>
+      </div>
+    </Fragment>
+  )
+}
+
+export default Projects

@@ -1,0 +1,78 @@
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 80vh;
+  color: rgb(199, 199, 199);
+  text-align: center;
+}
+
+#wrapper .header h1 {
+  text-shadow: 1px 1px 4px rgb(202, 202, 202);
+  font-size: 5rem;
+  padding-bottom: 5rem;
+  letter-spacing: 5px;
+  font-weight: 400;
+  padding-bottom: 2rem;
+  margin: 2rem;
+}
+
+#wrapper h2 {
+  text-shadow: 0px 0px 1px rgb(230, 227, 227);
+  background-color: #202020;
+  padding: 1px;
+  font-size: 1rem;
+  position: absolute;
+  top: -11px;
+  left: 10rem;
+  padding: 1px .7rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(202, 202, 202);
+  box-shadow: 0px 0px 8px 0 rgb(202, 202, 202);
+}
+
+#ouichat h2 { 
+  left: 8rem;
+}
+#tictactoe h2 { 
+  left: 5.5rem;
+}
+
+#wrapper .body {
+  display: flex;
+  flex-direction: row;
+}
+
+#ouichat, #place-finder, #tictactoe {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding:  .7rem 1rem;
+  padding-top: 1.1rem;
+  margin-right: 3rem;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+
+}
+
+#ouichat img {
+  width: 20rem;
+  height: 13rem;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+#place-finder img {
+  width: 25rem;
+  height: 13rem;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+#tictactoe img {
+  width: 25rem;
+  height: 13rem;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}

@@ -1,0 +1,46 @@
+body {
+  background-color: #1a1c1fef;
+  display: flex !important;
+
+}
+
+.mantine-Modal-overlay , .mantine-p4yhe9 {
+  opacity: 0.5 !important;
+  
+}
+
+
+.mantine-1uk2gmd {
+  color: rgb(255, 251, 251) !important;
+  background-color: black !important;
+  border: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+ 
+
+}
+.mantine-1uk2gmd:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: black !important;
+  font-size: 100%;
+  border: none !important;
+  box-shadow: none !important;
+
+}
+
+.mantine-Paper-root, .mantine-Modal-modal{
+  background-color: #1b1b1d !important;
+  // box-shadow: inset 0 0 5px 0px rgb(255, 255, 255);
+  padding: 5px 1rem;
+  height: 37rem;
+  box-shadow:  0px 0px 100px 10px rgb(10, 10, 10) !important;
+  border-radius: 1rem;
+}
+
+#place-finder-modal > .mantine-Paper-root, .mantine-Modal-modal {
+  height: 38rem;
+}
+

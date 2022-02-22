@@ -12,7 +12,7 @@ const App = () => {
   const location = useLocation( )
   return (
     <Fragment>
-      <h1 style={{color: "#777"}}>V5 motion exit</h1>
+      {/* <h1>V5 motion exit</h1> */}
       <AnimatePresence>
         <Switch location={location} key={location.key}>
         <Route exact path='/'>

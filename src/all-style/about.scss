@@ -1,15 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Josefin+Sans&display=swap');
+
 #about-wrapper {
-  color:#fcfcfcab;
+  margin-top: 0;
+  padding-top: 0;
+  color:#fcfcfc9a;
   display: flex;
+  font-size: 1.2rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  letter-spacing: 1px;
   width: 100vw;
-  height: 100vh;
-  
+  height: 80vh;
+  font-weight: 200;
+}
+
+#about-wrapper .technologies {
+  margin-top: 2rem;
+}
+
+#about-wrapper hr {
+  color: white;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+#about-wrapper .technologies img {
+  margin-right: 2rem;
 }
 
 #about-wrapper p {
-  width: 70vw;
+  width: 55rem;
+}
+
+#about-wrapper h1 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+#back-arrow{
+  display: inline-block;
+  color: rgb(144, 148, 147);
+  cursor: pointer;
+  margin-left: 5rem;
+  position: relative;
+}
+
+#back-arrow span {
+  font-weight: 900;
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  letter-spacing: 0;
+}
+#back-arrow img {
+  position: absolute;
+  left: -2.4rem;
+  top: 12px
+
 }

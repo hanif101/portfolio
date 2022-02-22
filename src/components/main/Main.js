@@ -21,6 +21,10 @@ const Main = () => {
     history.push('/projects')
   }
 
+  const handleAbout = event=> {
+    history.push('/about')
+  }
+
   return (
     <>
       <div id='main-wrapper'>
@@ -34,6 +38,7 @@ const Main = () => {
         <div className='link-wrapper'>
           <ul>
             <motion.li
+               onClick={handleAbout}
               initial={{ opacity: 0.1 }}
               animate={{ opacity: 1 }}
               whileHover={{

@@ -13,9 +13,9 @@ const Main = () => {
     setContact(prev)
   }
 
-  const handleExperience = (event) => {
-    history.push('/experience')
-  }
+  // const handleExperience = (event) => {
+  //   history.push('/experience')
+  // }
 
   const handleProjects = (event) => {
     history.push('/projects')

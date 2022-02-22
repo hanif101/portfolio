@@ -45,10 +45,10 @@ const Projects = () => {
 
       <motion.div 
       id='wrapper'
-      initial={{opacity: 0 }}
-      animate={{opacity: 1 }}
-      transition={{delay: 1, duration: 0.3, ease: "easeInOut"}}
-      exit={{ opacity: 0 , transition: { delay: 0.2, duration: 0.5, ease: 'easeInOut'} }}
+      initial={{opacity: 0, y: '-100'}}
+      animate={{opacity: 1 , y: '100'}}
+      transition={{delay:1, duration: 0.3, ease: "easeInOut"}}
+      exit={{ opacity: 0 , transition: { delay: 0.5, duration: 0.7, ease: 'easeInOut'} }}
       >
         <div className='header'>
           <h1>Projects</h1>

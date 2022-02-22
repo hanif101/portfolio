@@ -20,13 +20,21 @@ const About = () => {
       initial={{opacity: 0, x: -100}}
       animate={{scale: 1, opacity: 1, x: 0}}
       transition={{delay: 0.3, duration: 1, ease: "easeInOut"}}
+      exit={{ x: "-100vw", transition: { duration: 0.7 , ease: 'easeInOut'} }}
       >
         <motion.img src='https://icongr.am/jam/arrow-left.svg?size=40&color=9e9e9e' alt='' />
         <motion.span>
           home
         </motion.span>
       </motion.span>
-      <div id='about-wrapper'>
+
+      <motion.div 
+      id='about-wrapper'
+      initial={{opacity: 0 }}
+      animate={{opacity: 1, }}
+      transition={{duration: 0.3, ease: "easeInOut"}}
+      exit={{ opacity: 0 , transition: { delay: 0.2, duration: 0.7, ease: 'easeInOut'} }}
+      >
         <h1 className='portfolio'>WHOAMI</h1>
         <hr />
         <div>
@@ -80,7 +88,7 @@ const About = () => {
             />
           </p>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

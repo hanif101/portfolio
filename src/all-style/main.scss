@@ -14,8 +14,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin-top: 10rem;
+  padding-top: 3rem;
+  height: 50vh;
   width: 100vw;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.452);
 
 }
 
@@ -56,10 +60,11 @@ body {
 
 #main-wrapper .dev {
   margin-top: 1rem;
-  font-size: 1.1rem;
-  color:#c0c0c08a;
+  font-size: 1rem;
+  color:#754444;
   letter-spacing: 5px;
   font-family: 'Montserrat';
+  font-weight: 900;
   padding-bottom: 0;
 }
 

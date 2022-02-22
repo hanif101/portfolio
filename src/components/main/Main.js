@@ -27,7 +27,14 @@ const Main = () => {
 
   return (
     <>
-      <div id='main-wrapper'>
+      <motion.div 
+      id='main-wrapper'
+      initial={{opacity: 0 }}
+      animate={{opacity: 1 }}
+      transition={{delay: 0.3, duration: 0.3, ease: "easeInOut"}}
+      exit={{ opacity: 0 , transition: { delay: 0.2, duration: 0.5, ease: 'easeInOut'} }}
+      
+      >
         <div className='name-wrapper'>
           <p>HANIFA</p>
           <p className='lastname'>AHMADOV</p>
@@ -184,7 +191,7 @@ const Main = () => {
             </motion.div>
           )}
         </AnimatePresence>
-      </div>
+      </motion.div>
     </>
   )
 }

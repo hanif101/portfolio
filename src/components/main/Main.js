@@ -79,7 +79,7 @@ const Main = () => {
             >
               PROJECTS
             </motion.li>
-            <motion.li
+            {/* <motion.li
               onClick={handleExperience}
               initial={{ opacity: 0.1 }}
               animate={{ opacity: 1 }}
@@ -99,7 +99,7 @@ const Main = () => {
               }}
             >
               EXPERIENCE
-            </motion.li>
+            </motion.li> */}
 
             <motion.a
               initial={{ opacity: 0.1 }}

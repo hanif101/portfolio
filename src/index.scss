@@ -43,4 +43,24 @@ body {
 #place-finder-modal > .mantine-Paper-root, .mantine-Modal-modal {
   height: 38rem;
 }
+/* ============================================================ BACK ARROW ====================================================== */
+#back-arrow{
+  display: inline-block;
+  color: rgb(144, 148, 147);
+  cursor: pointer;
+  margin-left: 5rem;
+  position: relative;
+}
 
+#back-arrow span {
+  font-weight: 900;
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  letter-spacing: 0;
+}
+#back-arrow img {
+  position: absolute;
+  left: -2.4rem;
+  top: 12px
+
+}

@@ -1,5 +1,6 @@
 body {
   background-color: #1a1c1fef;
+  // background-color: #ffffff !important;
   display: flex !important;
 
 }
@@ -64,3 +65,5 @@ body {
   top: 12px
 
 }
+
+.tooltip + .tooltip > .tooltip-inner, .tooltip + .tooltip > .tooltip-arrow {background-color: #f00;}

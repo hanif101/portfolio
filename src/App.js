@@ -9,29 +9,30 @@ import About from './components/main/About'
 // import Experience from './components/main/Experience'
 
 const App = () => {
-  const location = useLocation( )
+  const location = useLocation()
   return (
     <Fragment>
       {/* <h1>V5 motion exit</h1> */}
+
       <AnimatePresence>
         <Switch location={location} key={location.key}>
-        <Route exact path='/'>
-          <Main />
-        </Route>
+          <Route exact path='/'>
+            <Main />
+          </Route>
 
-        <Route exact path='/about'>
-          <About />
-        </Route>
+          <Route exact path='/about'>
+            <About />
+          </Route>
+          <Route exact path='/projects'>
+            <Projects />
+          </Route>
 
-        <Route exact path='/projects'>
-          <Projects />
-        </Route>
-
-        {/* <Route exact path='/experience'>
+          {/* <Route exact path='/experience'>
         <Experience />
       </Route> */}
-      </Switch>
+        </Switch>
       </AnimatePresence>
+     
     </Fragment>
   )
 }

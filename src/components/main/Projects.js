@@ -18,7 +18,6 @@ const Projects = () => {
   const [placefinder, setPlacefinder] = useState(false)
   const [ouichat, setOuichat] = useState(false)
   let history = useHistory()
-  
 
   const handleModalTicTacToe = () => {
     return <>{console.log('hello')}</>
@@ -29,26 +28,24 @@ const Projects = () => {
   }
   return (
     <Fragment>
-
-      <motion.span id='back-arrow' 
-      onClick={handleBackArrow}
-      initial={{opacity: 0, x: -100}}
-      animate={{scale: 1, opacity: 1, x: 0}}
-      transition={{delay: 1, duration: 1, ease: "easeInOut"}}
-      exit={{ x: "-100vw", transition: { duration: 0.7 , ease: 'easeInOut'} }}
+      <motion.span
+        id='back-arrow'
+        onClick={handleBackArrow}
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ scale: 1, opacity: 1, x: 0 }}
+        transition={{ delay: 1, duration: 1, ease: 'easeInOut' }}
+        exit={{ x: '-100vw', transition: { duration: 0.7, ease: 'easeInOut' } }}
       >
         <motion.img src='https://icongr.am/jam/arrow-left.svg?size=40&color=9e9e9e' alt='' />
-        <motion.span>
-          home
-        </motion.span>
+        <motion.span>home</motion.span>
       </motion.span>
 
-      <motion.div 
-      id='wrapper'
-      initial={{opacity: 0, y: '-100'}}
-      animate={{opacity: 1 , y: '100'}}
-      transition={{delay:1, duration: 0.3, ease: "easeInOut"}}
-      exit={{ opacity: 0 , transition: { delay: 0.5, duration: 0.7, ease: 'easeInOut'} }}
+      <motion.div
+        id='wrapper'
+        initial={{ opacity: 0, y: '-100' }}
+        animate={{ opacity: 1, y: '100' }}
+        transition={{ delay: 1, duration: 0.3, ease: 'easeInOut' }}
+        exit={{ opacity: 0, transition: { delay: 0.5, duration: 0.7, ease: 'easeInOut' } }}
       >
         <div className='header'>
           <h1>Projects</h1>
@@ -65,7 +62,7 @@ const Projects = () => {
               size='70vw'
               centered
             >
-              <OuiChat/>
+              <OuiChat />
             </Modal>
 
             <Group position='center'>
@@ -93,7 +90,7 @@ const Projects = () => {
               size='65vw'
               centered
             >
-              <PlaceFinder/>
+              <PlaceFinder />
             </Modal>
 
             <Group position='center'>
@@ -110,7 +107,6 @@ const Projects = () => {
             </Group>
           </>
 
-    
           <>
             <Modal
               opened={tictactoe}

@@ -46,7 +46,7 @@ const Main = () => {
           <ul>
             <motion.li
                onClick={handleAbout}
-              initial={{ opacity: 0.1 }}
+              initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               whileHover={{
                 scale: 1.07,
@@ -67,7 +67,7 @@ const Main = () => {
             </motion.li>
             <motion.li
               onClick={handleProjects}
-              initial={{ opacity: 0.1 }}
+              initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               whileHover={{
                 scale: 1.07,
@@ -109,7 +109,7 @@ const Main = () => {
             </motion.li> */}
 
             <motion.a
-              initial={{ opacity: 0.1 }}
+              initial={{ opacity: 0  }}
               animate={{ opacity: 1 }}
               whileHover={{
                 scale: 1.07,
@@ -133,8 +133,9 @@ const Main = () => {
             </motion.a>
 
             <motion.li
+              id='contact'
               onClick={handleContact}
-              initial={{ opacity: 0.1 }}
+              initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               whileHover={{
                 scale: 1.07,

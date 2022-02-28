@@ -1,7 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 body {
   background-color: #1a1c1fef;
@@ -29,42 +29,42 @@ body {
 
 #main-wrapper .link-wrapper li, #main-wrapper .link-wrapper a {
   list-style-type: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0.5rem;
   margin: 1rem;
-  margin-top: 1rem;
-  letter-spacing: 3px;
-  font-family: 'Montserrat';
+  margin-top: 4rem;
+  letter-spacing: 2.5px;
   color: #fcfcfcab;
   cursor: pointer;
   text-decoration: none;
-  // border: 1px solid rgb(53, 53, 53);
-  // border-radius: 5px;
-
-  // background-color: rgb(44, 39, 39);
-  // box-shadow:  0  0 3px 1px rgb(255, 255, 255);
+  font-weight: 300;
 }
 
 #main-wrapper .name-wrapper{
+  display: flex;
   color: #fcfcfcab;
-  font-size: 5.5rem;
+  font-size: 5rem;
+  font-weight: 600;
+  font-style: italic;
   padding: 0;
   margin: 0;
+  letter-spacing: .5rem;
   line-height: 3rem;
-  font-family: 'Montserrat';
+  font-family: 'Poppins', sans-serif;
 }
 
 #main-wrapper .name-wrapper .lastname {
-  padding-left: 2.5rem;
+  margin-left: 1.5rem;
+  
 }
 
 #main-wrapper .dev {
   margin-top: 1rem;
-  font-size: 1rem;
-  color:#754444;
+  font-size: 1.3rem;
+  color:#fcfcfce1;
   letter-spacing: 5px;
-  font-family: 'Montserrat';
-  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   padding-bottom: 0;
 }
 
@@ -80,3 +80,4 @@ body {
 .resume-pdf{
  padding: 0px;
 }
+

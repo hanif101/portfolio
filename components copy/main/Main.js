@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 
-import '../../all-style/main.scss'
 
 const Main = () => {
   let [contact, setContact] = useState(false)

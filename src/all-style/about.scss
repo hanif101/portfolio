@@ -1,42 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Josefin+Sans&display=swap');
 
-#about-wrapper {
-  margin-top: 0;
-  padding-top: 0;
-  background-color:rgba(0, 0, 0, 0.452);
-  color:#fcfcfc9a;
+#about {
+
   display: flex;
-  font-size: 1.2rem;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   font-weight: 200;
+  // font-family:'Montserrat';
+  margin-top: 5rem;
+  padding-top: 0;
+  background-color:rgb(255, 255, 255);
+  color:#000000;
+  
+  
+  // &::before {
+  //   content: ""; // ::before and ::after both require content
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-image: url('../images/code.jpg');
+  //   opacity: .1;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
 }
 
-#about-wrapper .technologies {
-  margin-top: 2rem;
+#about .paragh{
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
 }
 
-#about-wrapper hr {
-  color: white;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 1rem;
+// #avatar {
+
+
+// }
+
+#avatar img{
+  height: 26rem;
+  width: 22rem;
+  display: inline-block;
+
 }
 
-#about-wrapper .technologies img {
-  margin-right: 2rem;
+#about p{
+  width: 45rem;
 }
 
-#about-wrapper p {
-  width: 55rem;
-}
-
-#about-wrapper h1 {
+#about h1 {
   font-family: 'Montserrat';
   font-weight: 500;
+  font-size: 4rem;
+  padding-left: 27rem;
 }
 

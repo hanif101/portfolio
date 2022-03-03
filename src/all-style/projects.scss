@@ -1,79 +1,110 @@
-#wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+#projects {
   width: 100vw;
-  height: 100vh;
-  color: rgb(199, 199, 199);
+  height: 500rem;
+  color: rgb(255, 255, 255);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.452);
+  background-color: rgb(0, 0, 0);
 }
 
-#wrapper .header h1 {
-  text-shadow: 1px 1px 4px rgb(202, 202, 202);
-  font-size: 5rem;
-  padding-bottom: 5rem;
-  letter-spacing: 5px;
-  font-weight: 400;
-  padding-bottom: 2rem;
-  margin: 2rem;
-}
-
-#wrapper h2 {
-  text-shadow: 0px 0px 1px rgb(230, 227, 227);
-  background-color: #202020;
-  padding: 1px;
-  font-size: 1rem;
+#cover {
+  height: 5rem;
+  width: 5rem;
+  background-color: rgb(255, 255, 255);
   position: absolute;
-  top: -11px;
-  left: 10rem;
-  padding: 1px .7rem;
+  left: 40.5rem;
+  top: -5rem;
+  z-index: 10;
+}
+
+#projects .header-span{
+  // font-weight: 900;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  font-family: 'Montserrat';
+  color: rgb(0, 0, 0) !important;
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+  right: 30rem;
+  top: 0rem;
+}
+
+#projects .body {
+width: 100vw;
+position: absolute;
+top: 0;
+}
+
+/*********************** LEFT *************************/
+#left {
+  height: 65rem;
+  width: 52vw;
+  // border-right: 1px solid rgb(255, 255, 255);
+}
+
+
+#left .oui-chat-image-div img {
+  height: 360px;
+  width: 500px;
+  margin-top: 7rem;
+  margin-right: 2rem;
   border-radius: 1rem;
-  border: 1px solid rgb(202, 202, 202);
-  box-shadow: 0px 0px 8px 0 rgb(202, 202, 202);
+  box-shadow: 0px 0px 20px 2px rgb(22, 22, 22);
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.05));
+  transition: all 1s ease;
+  transform: rotateY(0deg);
+
 }
 
-#ouichat h2 { 
-  left: 8rem;
-}
-#tictactoe h2 { 
-  left: 5.5rem;
-}
-
-#wrapper .body {
-  display: flex;
-  flex-direction: row;
-}
-
-#ouichat, #place-finder, #tictactoe {
-  position: relative;
-  border: 1px solid white;
+#left .tictactoe-image-div img {
+  height: 350px;
+  width: 450px;
+  margin-top: 6rem;
+  margin-right: 1.5rem;
   border-radius: 1rem;
-  padding:  .7rem 1rem;
-  padding-top: 1.1rem;
-  margin-right: 3rem;
-  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
-
+  box-shadow: 0px 0px 20px 2px rgb(22, 22, 22);
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.1));
+  transition: all 1s ease;
 }
 
-#ouichat img {
-  width: 20rem;
-  height: 13rem;
-  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+
+/*********************** RIGHT *************************/
+#right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48vw;
+}
+
+#right .open-store-image-div {
+    margin-top: 3.5rem;
+    cursor : pointer;
+    
+}
+
+#right .open-store-image-div img {
+  height: 350px;
+  width: 450px;
+  margin-right: 1rem;
   border-radius: 10px;
+  box-shadow: 0px 0px 20px 2px rgb(22, 22, 22);
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.1));
+  transition: all 1s ease;
+  opacity: 0.9;
+  cursor : pointer;
 }
 
-#place-finder img {
-  width: 25rem;
-  height: 13rem;
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
+#right .place-finder-image-div img {
+  height: 360px;
+  width: 460px;
+  margin-right: 1.5rem;
   border-radius: 10px;
+  box-shadow: 0px 0px 20px 2px rgb(22, 22, 22);
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.1));
+  opacity: 0.9;
+  cursor : pointer;
+  margin-top: 7rem;
 }
 
-#tictactoe img {
-  width: 25rem;
-  height: 13rem;
-  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-}
+
+

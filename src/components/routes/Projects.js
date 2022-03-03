@@ -1,15 +1,21 @@
 /* eslint-disable */
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 import { useHistory } from 'react-router-dom'
+import { useInView } from 'react-intersection-observer'
+import { Timeline, Item } from '@mantine/core'
 
 import '../../all-style/projects.scss'
+import openstore_img from '../../images/openstore.png'
 import tictactoe_img from '../../images/tictactoe.png'
 import ouichat_img from '../../images/ouichat.png'
 import placefinder_img from '../../images/placefinder.png'
-import TicTacToe from '../shared/TicTacToe'
-import PlaceFinder from '../shared/PlaceFinder'
+import Progress from './Progress'
+import OpenStore from '../shared/OpenStore'
 import OuiChat from '../shared/OuiChat'
+import PlaceFinder from '../shared/PlaceFinder'
+import TicTacToe from '../shared/TicTacToe'
+
 
 const Projects = () => {
   const [state, setState] = useState(false)
@@ -18,127 +24,68 @@ const Projects = () => {
   const [ouichat, setOuichat] = useState(false)
   let history = useHistory()
 
-  const handleModalTicTacToe = () => {
-    return <>{console.log('hello')}</>
+  const [ref, inView, entry] = useInView({
+    /* Optional options */
+    threshold: 0,
+    triggerOnce: false
+  })
+
+  const spanVariants = {
+    visible: { opacity: 1, y: -80, transition: { duration: 0.5 } },
+    hidden: {
+      opacity: 0,
+      y: 0
+    }
   }
 
-  const handleBackArrow = (event) => {
-    history.push('/')
-  }
   return (
     <Fragment>
-      <motion.span
-        id='back-arrow'
-        onClick={handleBackArrow}
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ scale: 1, opacity: 1, x: 0 }}
-        transition={{ delay: 1, duration: 1, ease: 'easeInOut' }}
-        exit={{ x: '-100vw', transition: { duration: 0.7, ease: 'easeInOut' } }}
-      >
-        <motion.img src='https://icongr.am/jam/arrow-left.svg?size=40&color=9e9e9e' alt='' />
-        <motion.span>home</motion.span>
-      </motion.span>
-
-      <motion.div
-        id='wrapper'
-        initial={{ opacity: 0, y: '-100' }}
-        animate={{ opacity: 1, y: '100' }}
-        transition={{ delay: 1, duration: 0.3, ease: 'easeInOut' }}
-        exit={{ opacity: 0, transition: { delay: 0.5, duration: 0.7, ease: 'easeInOut' } }}
-      >
-        <div className='header'>
-          <h1>Projects</h1>
-        </div>
+      <div id='projects'>
+        <div id='cover'></div>
+        <motion.span
+          className='header-span'
+          animate={inView ? 'visible' : 'hidden'}
+          variants={spanVariants}
+          ref={ref}
+        >
+          PROJECTS
+        </motion.span>
 
         <div className='body'>
-          <>
-            <Modal
-              opened={ouichat}
-              onClose={() => setOuichat(false)}
-              transition='fade'
-              transitionDuration={600}
-              transitiontimingfunction='ease'
-              size='70vw'
-              centered
-            >
-              <OuiChat />
-            </Modal>
+          <div id='left'>
 
-            <Group position='center'>
-              <div id='ouichat' onClick={() => setOuichat(true)}>
-                <div className='place-finder-header'>
-                  <h2>Oui Chat</h2>
-                </div>
+            <OpenStore />
 
-                <div className='ouichat-body'>
-                  <span>
-                    <img src={ouichat_img} alt='project3' />
-                  </span>
-                </div>
-              </div>
-            </Group>
-          </>
+            <div className='oui-chat-image-div'>
+              <img src={ouichat_img} />
+            </div>
 
-          <>
-            <Modal
-              opened={placefinder}
-              onClose={() => setPlacefinder(false)}
-              transition='fade'
-              transitionDuration={600}
-              transitiontimingfunction='ease'
-              size='65vw'
-              centered
-            >
-              <PlaceFinder />
-            </Modal>
+            <PlaceFinder />
 
-            <Group position='center'>
-              <div id='place-finder' onClick={() => setPlacefinder(true)}>
-                <div className='place-finder-header'>
-                  <h2>Place Finder</h2>
-                </div>
-                <div className='place-finder-body'>
-                  <span>
-                    <img src={placefinder_img} alt='project2' />
-                  </span>
-                </div>
-              </div>
-            </Group>
-          </>
+            <div className='tictactoe-image-div'>
+              <img src={tictactoe_img} />
+            </div>
+          </div>
 
-          <>
-            <Modal
-              opened={tictactoe}
-              onClose={() => setTictactoe(false)}
-              transition='fade'
-              transitionDuration={600}
-              transitiontimingfunction='ease'
-              size='40rem'
-              centered
-            >
-              <TicTacToe />
-            </Modal>
+          <div>
+            <Progress />
+          </div>
 
-            <Group position='center'>
-              <div id='tictactoe' onClick={() => setTictactoe(true)}>
-                <div className='tictactoe-header'>
-                  <h2>Tic Tac Toe</h2>
-                </div>
+          <div id='right'>
+            <div className='open-store-image-div'>
+              <img src={openstore_img} />
+            </div>
 
-                <div className='tictactoe-body'>
-                  <span>
-                    <img
-                      style={{ height: '200px', width: '250px' }}
-                      src={tictactoe_img}
-                      alt='project1'
-                    />
-                  </span>
-                </div>
-              </div>
-            </Group>
-          </>
+            <OuiChat />
+
+            <div className='place-finder-image-div'>
+              <img src={placefinder_img} />
+            </div>
+
+            <TicTacToe/>
+          </div>
         </div>
-      </motion.div>
+      </div>
     </Fragment>
   )
 }

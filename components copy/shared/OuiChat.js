@@ -1,5 +1,5 @@
 import React from 'react'
-import ouichat_img from '../../images/ouichat2.png'
+
 
 import '../../all-style/ouichat.scss'
 
@@ -11,7 +11,6 @@ const OuiChat = () => {
 
         <div className='img-tech'>
           <div className='img'>
-            <img src={ouichat_img} alt='placefinder_img' />
           </div>
           <p className='img-text'>
             This project was a team project that I have worked with my 4 other classmates. 

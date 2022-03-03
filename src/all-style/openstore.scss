@@ -1,0 +1,29 @@
+#open-store {
+  box-shadow: 0px 5px 10px -1px rgb(15,15, 15);
+  padding: 2rem 0;
+  width: 42rem;
+  margin-top: 2rem;
+}
+
+#open-store .open-store-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Montserrat';
+  letter-spacing: 3px;
+}
+
+#open-store .open-store-header span {
+  margin-right: 1rem;
+}
+
+
+#open-store .open-store-body {
+  margin-right: 1rem;
+  font-family: 'Montserrat';
+  letter-spacing: 1px;
+  width: 35rem;
+  margin-left: 4rem;
+  margin-top: 1.5rem;
+  color: #e4e2e2;
+  font-size: 1rem;
+}

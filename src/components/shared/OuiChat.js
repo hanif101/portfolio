@@ -1,62 +1,79 @@
+/* eslint-disable */
 import React from 'react'
-import ouichat_img from '../../images/ouichat2.png'
+import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 
 import '../../all-style/ouichat.scss'
 
-const OuiChat = () => {
+function OuiChat() {
   return (
     <>
-      <div id='ouichat-js'>
-        <h1>Oui Chat</h1>
+     <div id ='oui-chat'>
+              <div className='oui-chat-header'>
+                <span>OUI</span>
+                <span>CHAT</span>
+              </div>
 
-        <div className='img-tech'>
-          <div className='img'>
-            <img src={ouichat_img} alt='placefinder_img' />
-          </div>
-          <p className='img-text'>
-            This project was a team project that I have worked with my 4 other classmates. 
-            Application allows users to process the simple user functionalites like a signup or create account.
-            Project inspired ny Slack application. Users are able to join rooms and share ideas.  
-            Users are also able to create room also and send invitation to others (working on it).
+              <div className='oui-chat-body'>
+                <p>
+                This project was a team project that I have worked on with my 4 other classmates.
+                  Application allows users to process simple user functionality like a signup
+                  or create an account. Project inspired any Slack application. Users are able to join
+                  rooms and share ideas. Users are also able to create room also and send invitation
+                  to others. I had done user functionalities in the backend Express
+                  js and front end design routes React library.
+                </p>
 
-            I had done user functionalities in the backend Express js
-            and fron end design routes React library. 
+                <div className='d-flex mt-5 me-5 justify-content-center align-item-center'>
+                  <div className='col-2 me-4'>
+                    <motion.a
+                      whileHover={{
+                        scale: 1.08,
+                        color: '#fff',
+                        transition: {
+                          duration: 0.4,
+                          ease: 'easeInOut'
+                        }
+                      }}
+                      whileTap={{
+                        scale: 1.05,
+                        transition: {
+                          duration: 0
+                        }
+                      }}
+                      className='btn btn-secondary p-1 px-3'
+                      type='button'
+                      style={{ letterSpacing: '3px' }}
+                    >
+                      Live
+                    </motion.a>
+                  </div>
 
-          </p>
-        </div>
-        <div className='tech'>
-          <h4>TECHNOLOGIES USED</h4>
-          <p className='mt-1'>
-            <img src='https://icongr.am/devicon/express-original.svg?size=55&color=ffffff'  alt=''/>
-            <img src='https://icongr.am/devicon/mongodb-original-wordmark.svg?size=55&color=ffffff' alt='' />
-            <img src='https://icongr.am/devicon/javascript-original.svg?size=50&color=ffffff' alt='' />
-            <img src='https://icongr.am/devicon/bootstrap-plain.svg?size=50&color=ffffff' alt='' />
-            <img src='https://icongr.am/devicon/react-original.svg?size=50&color=ffffff' alt=''  />
-            <img src='https://icongr.am/devicon/css3-plain.svg?size=50&color=ffffff' alt=''/>
-            <img src='https://icongr.am/devicon/html5-original.svg?size=50&color=000000' alt='' />
-            <img src='https://icongr.am/simple/socketio.svg?size=50&color=e61919&colored=false' alt='' />
-            <img src='https://icongr.am/devicon/npm-original-wordmark.svg?size=70&color=ffffff' alt=''/>
-            <img src='https://icongr.am/devicon/nodejs-plain-wordmark.svg?size=70&color=ffffff' alt='' />
-          </p>
-        </div>
-
-        <div className='lunch-project'>
-          <h4 className='mb-2 ms-0'>LUNCH AND REPO </h4>
-
-          <a
-            href='https://ga-git-good.github.io/chat-app/'
-            target='_blank'
-            rel='noreferrer'
-            className='me-3'
-          >
-             <img src='https://icongr.am/octicons/play.svg?size=32&color=ffffff' alt=''/>
-          </a>
-          
-          <a href='https://github.com/ga-git-good/chat-app' target='_blank' rel='noreferrer'>
-            <img src='https://icongr.am/fontawesome/github.svg?size=37&color=ffffff' alt=''/>
-          </a>
-        </div>
-      </div>
+                  <div className='col-1'>
+                    <motion.a
+                      whileHover={{
+                        scale: 1.08,
+                        color: '#fff',
+                        transition: {
+                          duration: 0.4,
+                          ease: 'easeInOut'
+                        }
+                      }}
+                      whileTap={{
+                        scale: 1.05,
+                        transition: {
+                          duration: 0
+                        }
+                      }}
+                      className='btn btn-secondary p-1 px-3'
+                      type='button'
+                      style={{ letterSpacing: '2px' }}
+                    >
+                      Github
+                    </motion.a>
+                  </div>
+                </div>
+              </div>
+            </div>
     </>
   )
 }

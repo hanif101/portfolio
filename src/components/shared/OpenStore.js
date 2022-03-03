@@ -2,25 +2,25 @@
 import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 
-import '../../all-style/tictactoe.scss'
+import '../../all-style/openstore.scss'
 
-function TicTacToe() {
+function OpenStore() {
   return (
     <>
-      <div id='tictactoe'>
-        <div className='tictactoe-header'>
-          <span>TIC</span>
-          <span>TAC</span>
-          <span>TOE</span>
+      <div id='open-store'>
+        <div className='open-store-header'>
+          <span>OPEN</span>
+          <span>STORE</span>
         </div>
 
-        <div className='tictactoe-body'>
+        <div className='open-store-body'>
           <p>
-            The first project I completed at GA was a tic-tac-toe game. The goal for this project
-            was to create a functional tic-tac-toe game from scratch using new tools we learned
-            before hand. Players are able to start a fresh game, keep track of games, change their
-            password, and sign out of the application. Sematic HTML5, CSS3 & Bootstrap and JQuery
-            technologoes used.
+            Application offers users to list their product for sale. Users are able to do CRUD apis
+            to the server and see realtime updates. App has been inspired by offer apps and built
+            using React and React Routing, Rest APIs, and Framer-Motion library for smooth dropdowns
+            in the client-side. ExpressJS, Node JS and MongoDB ATLASS +Mongoose have been used on
+            the server side. Planning to use Socket.IO to have activation of relationship between
+            seller and buyers.
           </p>
 
           <div className='d-flex mt-5 me-5 justify-content-center align-item-center'>
@@ -78,4 +78,4 @@ function TicTacToe() {
   )
 }
 
-export default TicTacToe
+export default OpenStore

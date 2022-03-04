@@ -40,6 +40,8 @@ function OuiChat() {
                           duration: 0
                         }
                       }}
+                      href='https://ga-git-good.github.io/chat-app/'
+                      target='_blank'
                       className='btn btn-secondary p-1 px-3'
                       type='button'
                       style={{ letterSpacing: '3px' }}
@@ -64,6 +66,8 @@ function OuiChat() {
                           duration: 0
                         }
                       }}
+                      href='https://github.com/ga-git-good/chat-app'
+                      target='_blank'
                       className='btn btn-secondary p-1 px-3'
                       type='button'
                       style={{ letterSpacing: '2px' }}

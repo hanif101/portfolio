@@ -73,7 +73,9 @@ const Projects = () => {
               <img src={ouichat_img} />
             </div>
 
-            <PlaceFinder />
+            <div>
+              <PlaceFinder />
+            </div>
 
             <div className='tictactoe-image-div'>
               <img src={tictactoe_img} />

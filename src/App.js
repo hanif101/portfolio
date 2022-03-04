@@ -51,14 +51,14 @@ const App = () => {
             <Projects/>
           </ParallaxLayer>
 
-          <ParallaxLayer
+          {/* <ParallaxLayer
             offset={3}
             speed={0.3}
             // factor={3}
             style={{
 
             }}
-          ></ParallaxLayer>
+          ></ParallaxLayer> */}
 {/* 
           <ParallaxLayer
             offset={3,7}

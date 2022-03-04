@@ -40,6 +40,8 @@ function OpenStore() {
                     duration: 0
                   }
                 }}
+                href='https://hanif101.github.io/open-store/'
+                target='_blank'
                 className='btn btn-secondary p-1 px-3'
                 type='button'
                 style={{ letterSpacing: '3px' }}
@@ -64,6 +66,8 @@ function OpenStore() {
                     duration: 0
                   }
                 }}
+                href='https://github.com/hanif101/open-store'
+                target='_blank'
                 className='btn btn-secondary p-1 px-3'
                 type='button'
                 style={{ letterSpacing: '2px' }}

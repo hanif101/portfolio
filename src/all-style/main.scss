@@ -12,9 +12,9 @@
   // background-color: #1c1c26
 }
 
-#main .name-wrapper{
-  color: #ffffff;
-  font-size: 4rem;
+.name-wrapper{
+  color: #000000;
+  font-size: 5rem;
   font-weight: 600 !important;
   padding-top: 10rem;
   letter-spacing: .4rem;
@@ -22,6 +22,7 @@
   // font-family: 'Monoton';
   width: 100vw;
   text-align: center;
+  padding-left: 4rem;
 
   // position: relative;
   // text-transform: uppercase;
@@ -51,8 +52,8 @@
 //   }
 
 #main .developer {
-  margin-top: 2rem;
-  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  font-size: 1.7rem;
   color:#ffffffe1;
   letter-spacing: 4px;
   font-family:'Montserrat';
@@ -60,6 +61,7 @@
   padding-bottom: 0;
   width: 100vw;
   text-align: center;
+  padding-top: 2rem;
 }
 
 #main .soft {
@@ -69,7 +71,7 @@ margin-right: 1.5rem;
 #main .icongram {
     width: 100vw !important;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 #main .icongram span {

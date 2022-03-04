@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer'
 
 import '../../all-style/about.scss'
 import avatar from '../../images/meinbus.jpg'
+import ScrollDown from '../shared/ScrollDown'
 
 const About = () => {
   const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] }
@@ -38,10 +39,22 @@ const About = () => {
     }
   }
 
+  const scrollVariants = {
+    visible: { opacity: 1, transition: { delay: 2.2, duration: 2 } },
+    hidden: {
+      opacity: 0
+    }
+  }
+
   return (
     <>
       <AnimatePresence>
         <div id='about'>
+
+          <motion.div variants={scrollVariants} initial='hidden' animate='visible' id='scrolldown'>
+            <ScrollDown />
+          </motion.div>
+
           <motion.div
             className='header'
             animate={inView ? 'visible' : 'hidden'}

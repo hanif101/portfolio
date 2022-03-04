@@ -15,12 +15,12 @@ function PlaceFinder() {
 
         <div className='place-finder-body'>
           <p>
-            The application allows users to find places around. User is able to look place nearby
-            just entering a valid zipcode. Application serach engine gets data fro Yelp public API.
-            User sign up functionalities also saving users favprites places and comments or see
-            others comments are also provided. At the client side, sematic HTML5, JQuery,CSS3 and Bootstrap library used. Serverside Express Js,
+          The application allows users to find places around. Users are able to look up places nearby
+            just entering a valid zip code. Application search engine gets data from Yelp public API.
+            User sign up functionalities also saving users favorites places and comments or see
+            others comments are also provided. At the client side, semantic HTML5, JQuery,CSS3 and Bootstrap libraries are used. Serverside Express Js,
             MongoDB ATLAS & Mongoose, JWT || Passport npm packages
-            for user authantication.
+            for user authentication.
           </p>
 
           <div className='d-flex mt-5 me-5 justify-content-center align-item-center'>

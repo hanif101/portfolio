@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { Fragment, useState, useEffect } from 'react'
+import React, { Fragment, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 import { useHistory } from 'react-router-dom'
 import { useInView } from 'react-intersection-observer'
@@ -16,7 +16,6 @@ import OuiChat from '../shared/OuiChat'
 import PlaceFinder from '../shared/PlaceFinder'
 import TicTacToe from '../shared/TicTacToe'
 
-
 const Projects = () => {
   const [state, setState] = useState(false)
   const [tictactoe, setTictactoe] = useState(false)
@@ -24,17 +23,30 @@ const Projects = () => {
   const [ouichat, setOuichat] = useState(false)
   let history = useHistory()
 
-
-  const [ref, inView, entry] = useInView({
+  const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0,
     triggerOnce: false
   })
 
   const spanVariants = {
-    visible: { opacity: 1,  transition: { duration: 0.7 } },
+    visible: { opacity: 1 },
     hidden: {
-      opacity: 0,
+      opacity: 0
+    }
+  }
+
+  const openstoreVariants = {
+    visible: { opacity: 1, transition: { duration: 0.5 } },
+    hidden: {
+      opacity: 0.3
+    }
+  }
+
+  const openstoreimgVariants = {
+    visible: { opacity: 1, transition: { duration: 1 } },
+    hidden: {
+      opacity: 0
     }
   }
 
@@ -53,8 +65,9 @@ const Projects = () => {
 
         <div className='body'>
           <div id='left'>
-
-            <OpenStore />
+            <div>
+              <OpenStore />
+            </div>
 
             <div className='oui-chat-image-div'>
               <img src={ouichat_img} />
@@ -82,7 +95,7 @@ const Projects = () => {
               <img src={placefinder_img} />
             </div>
 
-            <TicTacToe/>
+            <TicTacToe />
           </div>
         </div>
       </div>

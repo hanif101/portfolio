@@ -18,7 +18,7 @@ function OuiChat() {
                 This project was a team project that I have worked on with my 4 other classmates.
                   Application allows users to process simple user functionality like a signup
                   or create an account. Project inspired any Slack application. Users are able to join
-                  rooms and share ideas. Users are also able to create room also and send invitation
+                  rooms and share ideas. Users are also able to create rooms and send invitations
                   to others. I had done user functionalities in the backend Express
                   js and front end design routes React library.
                 </p>

@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.afb4c816.chunk.css",
-    "main.js": "/portfolio/static/js/main.30c9101a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.30c9101a.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.930ce8f9.chunk.css",
+    "main.js": "/portfolio/static/js/main.626d57d2.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.626d57d2.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.8b5306c0.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.8b5306c0.js.map",
-    "static/js/2.f26411cb.chunk.js": "/portfolio/static/js/2.f26411cb.chunk.js",
-    "static/js/2.f26411cb.chunk.js.map": "/portfolio/static/js/2.f26411cb.chunk.js.map",
+    "static/js/2.a20aa963.chunk.js": "/portfolio/static/js/2.a20aa963.chunk.js",
+    "static/js/2.a20aa963.chunk.js.map": "/portfolio/static/js/2.a20aa963.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.afb4c816.chunk.css.map": "/portfolio/static/css/main.afb4c816.chunk.css.map",
-    "static/js/2.f26411cb.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f26411cb.chunk.js.LICENSE.txt",
-    "static/media/ouichat.4386d073.png": "/portfolio/static/media/ouichat.4386d073.png",
-    "static/media/ouichat2.eaa62aee.png": "/portfolio/static/media/ouichat2.eaa62aee.png",
-    "static/media/placefinder.0f7171f0.png": "/portfolio/static/media/placefinder.0f7171f0.png",
-    "static/media/tictactoe.e5e36c4e.png": "/portfolio/static/media/tictactoe.e5e36c4e.png"
+    "static/css/main.930ce8f9.chunk.css.map": "/portfolio/static/css/main.930ce8f9.chunk.css.map",
+    "static/js/2.a20aa963.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a20aa963.chunk.js.LICENSE.txt",
+    "static/media/meinbus.651d5660.jpg": "/portfolio/static/media/meinbus.651d5660.jpg",
+    "static/media/openstore.884fe703.png": "/portfolio/static/media/openstore.884fe703.png",
+    "static/media/ouichat.dcfeaf8f.png": "/portfolio/static/media/ouichat.dcfeaf8f.png",
+    "static/media/placefinder.e049aec5.png": "/portfolio/static/media/placefinder.e049aec5.png",
+    "static/media/tictactoe.e5e36c4e.png": "/portfolio/static/media/tictactoe.e5e36c4e.png",
+    "static/media/vfv.65c77625.jpg": "/portfolio/static/media/vfv.65c77625.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.8b5306c0.js",
-    "static/js/2.f26411cb.chunk.js",
-    "static/css/main.afb4c816.chunk.css",
-    "static/js/main.30c9101a.chunk.js"
+    "static/js/2.a20aa963.chunk.js",
+    "static/css/main.930ce8f9.chunk.css",
+    "static/js/main.626d57d2.chunk.js"
   ]
 }

@@ -2,18 +2,32 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
+import uniqid from 'uniqid'
 
 import '../../all-style/main.scss'
+import { Trail } from '../shared/AnimateLogos'
+import AnimateLogos from '../shared/AnimateLogos'
 
 const Main = () => {
+  const fname = ['H', 'A', 'N', 'I', 'F', 'A']
+  const lname = ['A', 'H', 'M', 'A', 'D', 'O', 'V']
+
   return (
     <>
       <div id='main'>
         <div className='name-wrapper'>
-          <p>
-            <span className='fname'>HANIFA</span>
-            <span className='lname'>AHMADOV</span>
-          </p>
+          {/* <Trail>{fname}</Trail>
+          <Trail>{lname}</Trail> */}
+
+          <Trail>
+            {fname.map((sik, index) => (
+              <div key={index}>{sik}</div>
+            ))}
+            &nbsp;&nbsp;
+            {lname.map((sikko, index) => (
+              <div key={index}>{sikko}</div>
+            ))}
+          </Trail>
         </div>
 
         <div className='developer'>
@@ -22,10 +36,10 @@ const Main = () => {
         </div>
 
         <div className='icongram'>
-          <span style={{cursor: 'pointer'}}>
+          <span style={{ cursor: 'pointer' }}>
             <a href='https://github.com/hanif101' target='_blank' rel='noreferrer'>
               <img
-                src='https://icongr.am/octicons/mark-github.svg?size=31&color=ffffff'
+                src='https://icongr.am/octicons/mark-github.svg?size=40&color=ffffff'
                 alt='github'
               />
             </a>
@@ -33,13 +47,13 @@ const Main = () => {
           <span>
             <a href='https://www.linkedin.com/in/hanifa-ahmadov/' target='_blank' rel='noreferrer'>
               <img
-                src='https://icongr.am/material/linkedin.svg?size=38&color=ffffff'
+                src='https://icongr.am/material/linkedin.svg?size=45&color=ffffff'
                 alt='linkedin'
               />
             </a>
           </span>
           <span>
-            <img src='https://icongr.am/material/gmail.svg?size=38&color=ffffff' alt='email' />
+            <img src='https://icongr.am/material/gmail.svg?size=45&color=ffffff' alt='email' />
           </span>
 
           <span>
@@ -49,7 +63,7 @@ const Main = () => {
               rel='noreferrer'
             >
               <img
-                src='https://icongr.am/material/file-pdf.svg?size=36&color=ffffff'
+                src='https://icongr.am/material/file-pdf.svg?size=45&color=ffffff'
                 alt='linkedin'
               />
             </a>

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 #main {
   height: 100vh;
@@ -13,7 +14,7 @@
 
 #main .name-wrapper{
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600 !important;
   padding-top: 10rem;
   letter-spacing: .4rem;
@@ -21,15 +22,37 @@
   // font-family: 'Monoton';
   width: 100vw;
   text-align: center;
+
+  // position: relative;
+  // text-transform: uppercase;
+  // text-shadow: -1px 1px 10px #444;
+  // color: white;
+  // letter-spacing: -0.05em;
+  // font-family: 'Anton', Arial, sans-serif;
+  // user-select: none;
+  // text-transform: uppercase;
+  // font-size: 150px;
+  // transition: all 0.25s ease-out;
+  // color: #000
 }
 
-#main .lname {
-margin-left: 3rem;
+
+
+#main .name-wrapper p {
+  display: flex;
+  justify-content: center;
 }
+
+// #main .lname {
+// letter-spacing: 3rem;
+// }
+// #main .fname {
+//   letter-spacing: 2rem;
+//   }
 
 #main .developer {
   margin-top: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color:#ffffffe1;
   letter-spacing: 4px;
   font-family:'Montserrat';

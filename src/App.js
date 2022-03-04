@@ -7,7 +7,8 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Main from './components/routes/Main'
 import Projects from './components/routes/Projects.js'
 import About from './components/routes/About'
-import Progress from './components/routes/Progress'
+import Skills from './components/routes/Skills'
+
 // import Experience from './components/main/Experience'
 import code from './images/vfv.jpg'
 
@@ -17,7 +18,7 @@ const App = () => {
   return (
     <Fragment>
       <div style={{ width: '100%', height: '100%' }}>
-        <Parallax pages={6}>
+        <Parallax pages={5.2307}>
           <ParallaxLayer offset={0} speed={0.1}>
             <Main />
           </ParallaxLayer>
@@ -58,15 +59,15 @@ const App = () => {
 
             }}
           ></ParallaxLayer>
-
+{/* 
           <ParallaxLayer
-            offset={3.7}
+            offset={3,7}
             speed={0.3}
             style={{
 
             }}
           >
-          </ParallaxLayer>
+          </ParallaxLayer> */}
 
           <ParallaxLayer
             offset={4.3}
@@ -75,6 +76,7 @@ const App = () => {
                 background:'#fff'
             }}
           >
+               <Skills/>
           </ParallaxLayer>
         </Parallax>
       </div>

@@ -1,40 +1,58 @@
+/* eslint-disable */
 import React from 'react'
+import { useInView } from 'react-intersection-observer'
+import { motion } from 'framer-motion/dist/framer-motion'
+
+import '../../all-style/skills.scss'
+import AnimateLogos from '../shared/AnimateLogos'
+import Tooltips from '../shared/Tooltips'
+import { logos } from '../shared/Logos'
+import AnimateText from '../shared/AnimateText'
 
 const Skills = () => {
+  const [ref, inView, entry] = useInView({
+    /* Optional options */
+    threshold: 0,
+    triggerOnce: false
+  })
+
+  const textVariants = {
+    visible: { opacity: 1, transition: {duration: 0.7 } },
+    hidden: {
+      opacity: 0
+    }
+  }
+
+  const logosVariants = {
+    visible: { opacity: 1, transition: { delay: 0.5, duration: 0.5 } },
+    hidden: {
+      opacity: 0
+    }
+  }
+
+  // const skills = ['T', 'E', 'C', 'H', 'N', 'O', 'L', 'O', 'G', 'I', 'E', 'S']
+  const skills = ['S', 'K', 'I', 'L', 'L', 'S']
   return (
     <div>
-      <div className='skills'>
-        <div className='header'>
-          <h1>SKILLS</h1>
-        </div>
+      <div id='skills'>
+        <motion.div
+          animate={inView ? 'visible' : 'hidden'}
+          variants={textVariants}
+          ref={ref}
+          id='animate-text'
+        >
+          <AnimateText text={skills} />
+        </motion.div>
 
-        <div className='skills-icon'>
-          <img src='https://icongr.am/devicon/express-original.svg?size=55&color=ffffff' alt='' />
-          <img
-            src='https://icongr.am/devicon/mongodb-original-wordmark.svg?size=55&color=ffffff'
-            alt=''
-          />
-          <img
-            src='https://icongr.am/devicon/javascript-original.svg?size=50&color=ffffff'
-            alt=''
-          />
-          <img src='https://icongr.am/devicon/bootstrap-plain.svg?size=50&color=ffffff' alt='' />
-          <img src='https://icongr.am/devicon/react-original.svg?size=50&color=ffffff' alt='' />
-          <img src='https://icongr.am/devicon/css3-plain.svg?size=50&color=ffffff' alt='' />
-          <img src='https://icongr.am/devicon/html5-original.svg?size=50&color=000000' alt='' />
-          <img
-            src='https://icongr.am/simple/socketio.svg?size=50&color=e61919&colored=false'
-            alt=''
-          />
-          <img
-            src='https://icongr.am/devicon/npm-original-wordmark.svg?size=70&color=ffffff'
-            alt=''
-          />
-          <img
-            src='https://icongr.am/devicon/nodejs-plain-wordmark.svg?size=70&color=ffffff'
-            alt=''
-          />
-        </div>
+        <Tooltips />
+
+        <motion.div 
+          animate={inView ? 'visible' : 'hidden'}
+          variants={logosVariants}
+          ref={ref}
+          className='body'>
+          <AnimateLogos logos={logos} />
+        </motion.div>
       </div>
     </div>
   )

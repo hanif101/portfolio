@@ -24,6 +24,7 @@ const Projects = () => {
   const [ouichat, setOuichat] = useState(false)
   let history = useHistory()
 
+
   const [ref, inView, entry] = useInView({
     /* Optional options */
     threshold: 0,
@@ -31,10 +32,9 @@ const Projects = () => {
   })
 
   const spanVariants = {
-    visible: { opacity: 1, y: -80, transition: { duration: 0.5 } },
+    visible: { opacity: 1,  transition: { duration: 0.7 } },
     hidden: {
       opacity: 0,
-      y: 0
     }
   }
 

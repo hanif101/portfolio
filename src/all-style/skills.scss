@@ -1,0 +1,53 @@
+#skills {
+  height: 100vh;
+  width: 100vw;
+  background-color: '#fff';
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#skills .header {
+  margin-top: .5rem;
+  font-weight: 900;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  font-family: 'Montserrat';
+  color: rgb(0, 0, 0) !important;
+  display: flex;
+ 
+}
+
+#skills .body {
+  margin-top: -2.5rem;
+  width: 80vw;
+  height: 100vh;
+  padding-left: 2rem;
+
+}
+
+#skills .body img {
+  margin: 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+
+}
+
+
+// .shadow:hover {
+//     // text-shadow: -16px 6px 15px #ced0d3;
+// }
+
+// #skills .body:before{
+//   content: '';
+//   position: absolute;
+//   bottom: -5px;
+//   left: 5%;
+//   width: 90%;
+//   height: 20px;
+//   background-color: rgba(0, 0, 0, 0.3);
+//   border-radius: 50%;
+//   z-index: -1;
+//   filter: blur(10px)
+// }
+

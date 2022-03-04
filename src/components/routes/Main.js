@@ -92,7 +92,7 @@ const Main = () => {
 
           <span>
             <a
-              href='https://drive.google.com/file/d/19K07TUO9ORT6Aq4tlffUuSR5cQMMZlph/view?usp=sharing'
+              href='https://drive.google.com/file/d/1jV78DpcBKB7HuAuaD0noYpkqSg74Act7/view?usp=sharing'
               target='_blank'
               rel='noreferrer'
             >

@@ -72,10 +72,34 @@
 }
 
 #scrolldown{
-  position: absolute;
-  left: 50vw;
-  top: -6.5rem;
- 
- }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 11rem;
+  position: relative;
+  top: -13rem;
+  padding-right: 1rem;
 
+}
+
+
+@media all and (max-width: 900px) {
+  
+  #scrolldown{
+    margin-left: 1.5rem;
+    // background-color: red;
+  }
+
+}
+
+
+@media all and (max-width: 500px) {
+  
+  #scrolldown{
+    margin-left: 1.5rem;
+    // background-color: red;
+  }
+
+}
 

@@ -45,28 +45,32 @@ const Main = () => {
     }
   }
 
-
-
   return (
     <>
       <div className='name-wrapper'>
-        {/* <Trail>{fname}</Trail>
-          <Trail>{lname}</Trail> */}
-
-        <Trail>
-          {fname.map((sik, index) => (
-            <div key={index}>{sik}</div>
-          ))}
-          &nbsp;&nbsp;
-          {lname.map((sikko, index) => (
-            <div key={index}>{sikko}</div>
-          ))}
-        </Trail>
+        <span className='fname'>
+          <Trail>
+            {fname.map((sik, index) => (
+              <div className='d-flex' key={index}>
+                {sik}
+              </div>
+            ))}
+          </Trail>
+        </span>
+        <span className='lname'>
+          <Trail>
+            {lname.map((sikko, index) => (
+              <div className='d-flex' key={index}>
+                {sikko}
+              </div>
+            ))}
+          </Trail>
+        </span>
       </div>
       <motion.div variants={divVariants} initial='hidden' animate='visible' id='main'>
         <motion.div variants={devVariants} initial='hidden' animate='visible' className='developer'>
-          <span className='soft'>SOFTWARE</span>
-          <span className='dev'>DEVELOPER</span>
+          <div className='soft'>SOFTWARE</div>
+          <div className='dev'>DEVELOPER</div>
         </motion.div>
 
         <motion.div variants={iconVariants} initial='hidden' animate='visible' className='icongram'>
@@ -92,7 +96,7 @@ const Main = () => {
 
           <span>
             <a
-              href='https://drive.google.com/file/d/1jV78DpcBKB7HuAuaD0noYpkqSg74Act7/view?usp=sharing'
+              href='https://drive.google.com/file/d/1n8K7OlN7CXDeengJAWLXKfjmSX93_EXE/view?usp=sharing'
               target='_blank'
               rel='noreferrer'
             >
@@ -102,7 +106,6 @@ const Main = () => {
               />
             </a>
           </span>
-     
         </motion.div>
       </motion.div>
     </>
@@ -110,3 +113,29 @@ const Main = () => {
 }
 
 export default Main
+
+/* 
+
+    <span className='d-flex me-4'>
+          <Trail>
+            {fname.map((sik, index) => (
+              <div className='d-flex' key={index}>
+                {sik}
+              </div>
+            ))}
+          </Trail>
+        </span>
+
+        &nbsp;&nbsp; 
+
+        <span className='d-flex ms-4'>
+          <Trail>
+            {lname.map((sikko, index) => (
+              <div className='d-flex' key={index}>
+                {sikko}
+              </div>
+            ))}
+          </Trail>
+        </span>
+
+*/

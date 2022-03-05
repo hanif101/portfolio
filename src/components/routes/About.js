@@ -49,12 +49,10 @@ const About = () => {
   return (
     <>
       <AnimatePresence>
+        <motion.div variants={scrollVariants} initial='hidden' animate='visible' id='scrolldown'>
+          <ScrollDown />
+        </motion.div>
         <div id='about'>
-
-          <motion.div variants={scrollVariants} initial='hidden' animate='visible' id='scrolldown'>
-            <ScrollDown />
-          </motion.div>
-
           <motion.div
             className='header'
             animate={inView ? 'visible' : 'hidden'}

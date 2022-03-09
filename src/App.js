@@ -12,13 +12,12 @@ import Skills from './components/routes/Skills'
 // import Experience from './components/main/Experience'
 import code from './images/vfv.jpg'
 
-
 const App = () => {
   const location = useLocation()
   return (
     <Fragment>
-      <div style={{ width: '100%', height: '100%' }}>
-        <Parallax pages={5.2307}>
+    
+<Parallax pages={5.2307}>
           <ParallaxLayer offset={0} speed={0.1}>
             <Main />
           </ParallaxLayer>
@@ -26,48 +25,14 @@ const App = () => {
           <ParallaxLayer offset={1} speed={0} style={{ backgroundColor: '#fff' }}>
             <About />
           </ParallaxLayer>
-        
-        
 
-            {/* 
-          <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none'}}>
-            <img src={code} style={{ width: '15%', marginLeft: '70%', marginLeft: '89%' }} />
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none'}}>
-            <img src={code} style={{ width: '15%', marginLeft: '70%', marginLeft: '89%' }} />
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none'}}>
-            <img src={code} style={{ width: '15%', marginLeft: '70%', marginLeft: '89%' }} />
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none'}}>
-            <img src={code} style={{ width: '15%', marginLeft: '70%', marginLeft: '89%' }} />
-            </ParallaxLayer> */}
-
-          <ParallaxLayer
+            <ParallaxLayer
             offset={2}
             speed={0.3}
-            factor={3}
           >
             <Projects/>
           </ParallaxLayer>
 
-          {/* <ParallaxLayer
-            offset={3}
-            speed={0.3}
-            // factor={3}
-            style={{
-
-            }}
-          ></ParallaxLayer> */}
-{/* 
-          <ParallaxLayer
-            offset={3,7}
-            speed={0.3}
-            style={{
-
-            }}
-          >
-          </ParallaxLayer> */}
 
           <ParallaxLayer
             offset={4.3}
@@ -79,86 +44,43 @@ const App = () => {
                <Skills/>
           </ParallaxLayer>
         </Parallax>
-      </div>
     </Fragment>
   )
 }
 
 export default App
 
-{
-  /* <Switch location={location} key={location.key}>
-<Route exact path='/'>
-  <Main />
-</Route>
-
-<Route exact path='/about'>
-  <About />
-</Route>
-<Route exact path='/projects'>
-  <Projects />
-</Route>
-</Switch> */
-}
-
 /* 
 
 
 
-
-<div style={{ width: '100%', height: '100%'}}>
-        <Parallax pages={5}>
+<Parallax pages={5.2307}>
           <ParallaxLayer offset={0} speed={0.1}>
             <Main />
           </ParallaxLayer>
-          <ParallaxLayer offset={1} speed={0.3} style={{ backgroundColor: '#fff' }}>
+
+          <ParallaxLayer offset={1} speed={0} style={{ backgroundColor: '#fff' }}>
             <About />
           </ParallaxLayer>
-{/* 
-          <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none'}}>
-            <img src={code} style={{ width: '15%', marginLeft: '70%', marginLeft: '89%' }} />
+
+            <ParallaxLayer
+            offset={2}
+            speed={0.3}
+            factor={3}
+          >
+            <Projects/>
           </ParallaxLayer>
-          <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none'}}>
-            <img src={code} style={{ width: '15%', marginLeft: '70%', marginLeft: '89%' }} />
+
+
+          <ParallaxLayer
+            offset={4.3}
+            speed={0.3}
+            style={{
+                background:'#fff'
+            }}
+          >
+               <Skills/>
           </ParallaxLayer>
-          <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none'}}>
-            <img src={code} style={{ width: '15%', marginLeft: '70%', marginLeft: '89%' }} />
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none'}}>
-            <img src={code} style={{ width: '15%', marginLeft: '70%', marginLeft: '89%' }} />
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none'}}>
-            <img src={code} style={{ width: '15%', marginLeft: '70%', marginLeft: '89%' }} />
-          </ParallaxLayer> */
+        </Parallax>
 
-//     <ParallaxLayer
-//       offset={2}
-//       speed={0.3}
-//       factor={3}
-//       style={{
-//         background: '#000'
-//       }}
-//     ></ParallaxLayer>
-
-//     <ParallaxLayer
-//       offset={3}
-//       speed={0.3}
-//       factor={3}
-//       style={{
-//         background: '#fff'
-//       }}
-//     ></ParallaxLayer>
-
-//     <ParallaxLayer
-//       offset={4}
-//       speed={0.3}
-//       style={{
-//         background: '#000'
-//       }}
-//     >
-//       <h1>Hello there</h1>
-
-//     </ParallaxLayer>
-
-//   </Parallax>
-// </div>
+*/

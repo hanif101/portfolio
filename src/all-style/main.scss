@@ -6,134 +6,178 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 
-#main {
-  display: flex;
-  flex-direction: column;
-  height: 25rem;
+
+.main-header{
+  height: 50vh;
   width: 100vw;
-  background-color: rgb(0, 0, 0);
-  // background-color: #1c1c26
-}
-
-.name-wrapper{
-  height: 25rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  text-align: center;
-
-  font-size: 8rem; 
-  padding: 4rem;
-  padding-top: 12rem;
-  letter-spacing: .2rem;
-
-  background-color: white;
-  text-shadow: -15px 5px 20px #ced0d3;
-  color: white;
-
- 
-  font-family: 'Anton', Arial, sans-serif;
-  // font-family: 'Montserrat';
-  // font-family: 'Monoton';
-}
-
-.name-wrapper .fname {
-  margin-right: 3rem;
-}
-
-#main .developer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 1.8rem;
-  color:#fff;
-  letter-spacing: 0.5rem;
-  font-family: 'Monoton';
-  width: 100vw;
-  margin-top: 2rem;
-}
 
+  font-size: 6rem; 
+  padding: 1rem;
+  padding-top: 10rem;
+  letter-spacing: .0rem;
 
-#main .soft, #main .dev {
-margin-right: 2rem;
-}
+  // text-shadow: -10px 5px 20px #ced0d3;
 
-#main .icongram {
-  text-align: center;
-    width: 100vw !important;
-    margin-top: 3rem;
-}
-
-#main .icongram span {
-    margin-right: 2rem ;
-    cursor: pointer !important;
-}
-
-
-
-/******************************************************** UNDER 1050  ***************************************/
-
-@media all and (max-width: 1050px) {
-  // #main {
-  //   width: 100vw;
-  //   // background-color: #1c1c26
-  // }
-
-  .name-wrapper{
-    padding-bottom: 6rem;
-    flex-direction: column;
-    font-size: 7rem; 
+  background-color: rgb(0, 0, 0);
+  color: rgb(252, 252, 252);
  
+  // font-family: 'Anton', Arial, sans-serif;
+  font-family: 'Montserrat';
+  // font-family: 'Monoton';
 
-
+  .trails-wrapper-div, .trails-wrapper-div {
+    height: 0px;
+    
   }
 
-  .name-wrapper .fname {
-    margin-right: 0;
+  .fname, .lname {
+    margin: 1rem;
+    height: 100px;
+  }
+}
+
+
+
+
+.main-body {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  color:#fff;
+  background-color: black;
+  padding-bottom: 6rem;
+
+  letter-spacing: 0.5rem;
+  // font-family: 'Monoton';
+    font-family: 'Montserrat';
+
+}
+
+.main-body .developer {
+  font-size: 1.7rem;
+  display: flex;
+
+
+  .soft, .dev {
+    text-align: center;
+    margin: 1rem;
+  }
+}
+
+.main-body .icongram {
+
+  margin-top: 1rem;
+  text-align: center;
+
+  img {
+    padding: 1rem;
+    height: 75px;
+    cursor: pointer;
   }
 
-  #main .developer {
-    // display: flex !important;
-    // justify-content: center !important;
-    // width: 100vw !important;
-    // align-items: center !important;
-    margin-left: 2rem;
+}
 
+
+/******************************************************** UNDER 960  ***************************************/
+
+
+/******************************************************** UNDER 768  ***************************************/
+
+
+@media all and (max-width: 768px) {
+
+ 
+.main-header{
+  font-size: 5rem;
+  padding-top: 8rem;
+
+.fname, .lname {
+   padding: 0;
+   margin: 0;
+  } 
+
+  .fname {
+    padding-bottom: 3rem;
+   } 
+
+}
+
+
+.main-body {
+  padding-bottom: 12rem;
+}
+
+
+.main-body .developer {
+  font-size: 1.3rem;
+  display: flex;
+
+
+  .soft, .dev {
+    text-align: center;
+    margin: 1rem;
   }
-
-  #main .icongram {
-    width: 100vw !important;
-    margin-top: 3rem;
-    margin-left: 2rem;
-   
 }
 
 }
 
-/******************************************************** UNDER 500  ***************************************/
+/******************************************************** UNDER 578 ***************************************/
 
+@media all and (max-width: 578px) {
 
-@media all and (max-width: 575px) {
-
-  .name-wrapper{
-    padding: 0;
-    padding-top: 10rem;
-    flex-direction: column;
-    font-size: 4.7rem;
-    font-family: 'Anton', Arial, sans-serif;
-    color:#fff;
-    letter-spacing: 0.3rem;
-    text-shadow: -10px 5px 20px #ced0d3;
+  .main-header{
+    font-size: 3rem;
+    padding-top: 15rem;
+  
+  .fname, .lname {
+     padding: 0;
+     margin: 0;
+    } 
+  
+    .fname {
+      padding-bottom: 0rem;
+      height: 3.5rem;
+     } 
   }
 
-  .name-wrapper .fname {
-    margin-right: 0;
-  }
 
-  #main .developer {
+
+.main-body {
+  padding-bottom: 16rem;
+}
+
+
+  .main-body .developer {
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+  
+  
+    .soft, .dev {
+      text-align: center;
+      margin: 0rem;
+    }
   }
 
-}
 
+  .main-body .icongram {
+
+    flex-wrap: wrap;
+  
+    img {
+      flex-wrap: wrap;
+      padding: 1rem;
+      height: 60px;
+      cursor: pointer;
+    }
+  
+  }
+  
+}

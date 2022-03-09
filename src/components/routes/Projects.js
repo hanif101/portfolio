@@ -30,7 +30,7 @@ const Projects = () => {
   })
 
   const spanVariants = {
-    visible: { opacity: 1 },
+    visible: { opacity: 1, y: -90, transition: {duration:1} },
     hidden: {
       opacity: 0
     }

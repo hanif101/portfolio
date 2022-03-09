@@ -62,7 +62,7 @@ const SqueezeSpring = ({ children }) => {
 
   return (
     <animated.div
-      className='squeezespring-wrapper-text-div row rows-6'
+      className='row rows-6'
       onMouseEnter={() => toggle(true)}
       style={{
         transform: interpolate(

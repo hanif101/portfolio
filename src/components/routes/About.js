@@ -16,31 +16,29 @@ const About = () => {
   })
 
   const imgVariants = {
-    visible: { opacity: 10, scale: 1.5, y: 10, x: 0 },
+    visible: { opacity: 1, x:70 },
     hidden: {
       opacity: 0.1,
-      scale: 1.2,
-      x: -10
+      x: 40
     }
   }
 
   const textVariants = {
-    visible: { opacity: 1 },
+    visible: { opacity: 1, transition: { delay: 0.2, duration: 2, ease: 'easeOut' }},
     hidden: {
       opacity: 0
     }
   }
 
   const aboutVariants = {
-    visible: { opacity: 1, x: 0, transition: { delay: 0.1, duration: 2, ease: 'easeOut' } },
+    visible: { opacity: 1, transition: { delay: 0.2, duration: 2, ease: 'easeOut' } },
     hidden: {
       opacity: 0,
-      x: 100
     }
   }
 
   const scrollVariants = {
-    visible: { opacity: 1, transition: { delay: 2.2, duration: 2 } },
+    visible: { opacity: 1, transition: { delay: 1.5, duration: 2 } },
     hidden: {
       opacity: 0
     }
@@ -59,17 +57,19 @@ const About = () => {
             variants={aboutVariants}
             ref={ref}
           >
-            <h1>ABOUT</h1>
+            <span>ABOUT</span>
+            <span>ME</span>
           </motion.div>
 
           <div className='paragh'>
-            <motion.div>
+            <motion.div className='aboutme-img'>
               <motion.img
                 animate={inView ? 'visible' : 'hidden'}
                 variants={imgVariants}
                 transition={{ duration: 2, ease: 'easeOut' }}
                 ref={ref}
                 src={avatar}
+            
               />
             </motion.div>
 
@@ -78,6 +78,7 @@ const About = () => {
               animate={inView ? 'visible' : 'hidden'}
               transition={{ duration: 1, ease: 'easeOut' }}
               ref={ref}
+              className='aboutme-text'
             >
               <p>
                 <span className='first-letter'>I</span> live in Boston, MA but I love to travel and

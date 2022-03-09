@@ -104,6 +104,36 @@ export const logos = [
   />
 ]
 
+export const icons = [
+  <a href='https://github.com/hanif101' target='_blank' rel='noreferrer'>
+    <img
+      src='https://icongr.am/material/github.svg?size=40&color=ffffff'
+      alt='github'
+      className='github'
+    />
+  </a>,
+  <a href='https://www.linkedin.com/in/hanifa-ahmadov/' target='_blank' rel='noreferrer'>
+    <img src='https://icongr.am/material/linkedin.svg?size=40s&color=ffffff' alt='linkedin' />
+  </a>,
+
+  <a href='#home' target='_blank' rel='noreferrer'>
+    <img src='https://icongr.am/material/gmail.svg?size=45&color=ffffff' alt='email' className="gmail" />
+  </a>,
+
+  // <img src='https://icongr.am/simple/gmail.svg?size=45&color=ffffff&colored=false' alt='email' />
+  <a
+    href='https://drive.google.com/file/d/1n8K7OlN7CXDeengJAWLXKfjmSX93_EXE/view?usp=sharing'
+    target='_blank'
+    rel='noreferrer'
+  >
+    <img
+      src='https://icongr.am/material/file-pdf-box.svg?size=40&color=ffffff'
+      alt='linkedin'
+      className='resume'
+    />
+  </a>
+]
+
 // export const logos2 = [
 //   <img
 //     className='py'

@@ -24,7 +24,7 @@ function OpenStore() {
           </p>
 
           <div className='d-flex mt-5 me-5 justify-content-center align-item-center'>
-            <div className='col-2 me-4'>
+            <div className='col-2 live'>
               <motion.a
                 whileHover={{
                   scale: 1.08,
@@ -50,7 +50,7 @@ function OpenStore() {
               </motion.a>
             </div>
 
-            <div className='col-1'>
+            <div className='col-1 github'>
               <motion.a
                 whileHover={{
                   scale: 1.08,

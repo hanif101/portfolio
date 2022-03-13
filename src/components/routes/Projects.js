@@ -30,21 +30,7 @@ const Projects = () => {
   })
 
   const spanVariants = {
-    visible: { opacity: 1, y: -90, transition: {duration:1} },
-    hidden: {
-      opacity: 0
-    }
-  }
-
-  const openstoreVariants = {
-    visible: { opacity: 1, transition: { duration: 0.5 } },
-    hidden: {
-      opacity: 0.3
-    }
-  }
-
-  const openstoreimgVariants = {
-    visible: { opacity: 1, transition: { duration: 1 } },
+    visible: { opacity: 1, y: -90, transition: { duration: 0.5 } },
     hidden: {
       opacity: 0
     }
@@ -52,55 +38,65 @@ const Projects = () => {
 
   return (
     <Fragment>
-      <div id='projects'>
+      <motion.div id='projects' ref={ref}>
         <div id='cover'></div>
         <motion.span
           className='header-span'
           animate={inView ? 'visible' : 'hidden'}
           variants={spanVariants}
-          ref={ref}
         >
           PROJECTS
         </motion.span>
 
-        <div className='body'>
-          <div id='left'>
-            <div>
+        <motion.div className='body'>
+
+          {/* Place Finder */}
+          <div id='os-wrapper-div'>
+            <div className='os-text'>
               <OpenStore />
             </div>
-
-            <div className='oui-chat-image-div'>
-              <img src={ouichat_img} />
-            </div>
-
-            <div>
-              <PlaceFinder />
-            </div>
-
-            <div className='tictactoe-image-div'>
-              <img src={tictactoe_img} />
-            </div>
-          </div>
-
-          <div>
-            <Progress />
-          </div>
-
-          <div id='right'>
-            <div className='open-store-image-div'>
+            <div className='os-number'>1</div>
+            <div className='os-img'>
               <img src={openstore_img} />
             </div>
+          </div>
 
-            <OuiChat />
+          {/* Oui Chat */}
+          <div id='ou-wrapper-div'>
+            <div className='ou-img'>
+              <img src={ouichat_img} />
+            </div>
+            <div className='ou-number'>2</div>
+            <div className='ou-text'>
+              <OuiChat />
+            </div>
+          </div>
 
-            <div className='place-finder-image-div'>
+
+          {/* Open Store */}
+          <div id='pf-wrapper-div'>
+            <div className='pf-text'>
+              <PlaceFinder />
+            </div>
+            <div className='pf-number'>3</div>
+            <div className='pf-img'>
               <img src={placefinder_img} />
             </div>
-
-            <TicTacToe />
           </div>
-        </div>
-      </div>
+
+
+          {/* Tic Tac Toe*/}
+          <div id='ttt-wrapper-div'>
+            <div className='ttt-img'>
+              <img src={tictactoe_img} />
+            </div>
+            <div className='ttt-number'>4</div>
+            <div className='ttt-text'>
+              <TicTacToe />
+            </div>
+          </div>
+        </motion.div>
+      </motion.div>
     </Fragment>
   )
 }

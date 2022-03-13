@@ -17,7 +17,7 @@ const App = () => {
   return (
     <Fragment>
     
-<Parallax pages={5.2307}>
+          <Parallax pages={5}>
           <ParallaxLayer offset={0} speed={0.1}>
             <Main />
           </ParallaxLayer>
@@ -26,17 +26,21 @@ const App = () => {
             <About />
           </ParallaxLayer>
 
-            <ParallaxLayer
+          
+
+
+             <ParallaxLayer
             offset={2}
             speed={0.3}
           >
             <Projects/>
-          </ParallaxLayer>
+          </ParallaxLayer> 
 
 
           <ParallaxLayer
-            offset={4.3}
-            speed={0.3}
+            offset={4}
+            speed={0.5}
+            factor={1}
             style={{
                 background:'#fff'
             }}

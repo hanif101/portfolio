@@ -1,29 +1,43 @@
 #oui-chat {
-  box-shadow: 5px 5px 10px 1px rgb(15, 15, 15);
-  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem 2rem;
 }
 
 
 #oui-chat .oui-chat-header {
-  margin-top: 5.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
   font-family: 'Montserrat';
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
-
-#oui-chat .oui-chat-header span {
- margin-right: 1rem;
-}
-
 
 #oui-chat .oui-chat-body {
-  margin-right: 1rem;
   font-family: 'Montserrat';
   letter-spacing: 1px;
-  width: 35rem;
-  margin-left: 2rem;
   color: #e4e2e2;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+}
+
+
+/******************************************************** UNDER 1178 ***************************************/
+@media all and (max-width: 1178px) {
+
+  #oui-chat .oui-chat-header {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  #oui-chat .oui-chat-body {
+    font-size: 0.9rem;
+  }
+  #oui-chat .oui-chat-body .live{
+
+    margin-right: 3rem;
+  }
+
 }

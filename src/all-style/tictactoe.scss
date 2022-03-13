@@ -1,29 +1,43 @@
 #tictactoe {
-  box-shadow: 5px 5px 10px 1px rgb(15, 15, 15);
-  padding: 2rem 0;
+  padding: 1rem;
 }
 
 
 #tictactoe  .tictactoe-header {
-  margin-top: 9rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
   font-family: 'Montserrat';
   letter-spacing: 2px;
 }
 
-#tictactoe  .tictactoe-header span {
- margin-right: 1rem;
+#tictactoe  .tictactoe-body {
+  font-family: 'Montserrat';
+  letter-spacing: 1px;
+  max-width: 35rem;
+  color: #e4e2e2;
+  font-size: 1.2rem;
 }
 
 
-#tictactoe  .tictactoe-body {
-  margin-right: 1rem;
-  font-family: 'Montserrat';
-  letter-spacing: 1px;
-  width: 35rem;
-  margin-left: 2rem;
-  color: #e4e2e2;
-  font-size: 1.1rem;
+/******************************************************** UNDER 1178 ***************************************/
+@media all and (max-width: 1178px) {
+
+  #tictactoe {
+    padding: 0rem;
+    margin-top: 0rem;
+  }
+
+  #tictactoe  .tictactoe-header{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  #tictactoe  .tictactoe-body {
+    font-size: 0.9rem;
+  }
+  #tictactoe  .tictactoe-body  .live{
+    margin-right: 3rem;
+  }
+
 }

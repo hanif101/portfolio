@@ -24,7 +24,7 @@ function OuiChat() {
                 </p>
 
                 <div className='d-flex mt-5 me-5 justify-content-center align-item-center'>
-                  <div className='col-2 me-4'>
+                  <div className='col-2 live'>
                     <motion.a
                       whileHover={{
                         scale: 1.08,

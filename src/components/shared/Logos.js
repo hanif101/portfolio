@@ -116,13 +116,13 @@ export const icons = [
     <img src='https://icongr.am/material/linkedin.svg?size=40s&color=ffffff' alt='linkedin' />
   </a>,
 
-  <a href='#home' target='_blank' rel='noreferrer'>
-    <img src='https://icongr.am/material/gmail.svg?size=45&color=ffffff' alt='email' className="gmail" />
-  </a>,
+  // <a href='#home' target='_blank' rel='noreferrer'>
+  //   <img src='https://icongr.am/material/gmail.svg?size=45&color=ffffff' alt='email' className="gmail" />
+  // </a>,
 
   // <img src='https://icongr.am/simple/gmail.svg?size=45&color=ffffff&colored=false' alt='email' />
   <a
-    href='https://drive.google.com/file/d/1n8K7OlN7CXDeengJAWLXKfjmSX93_EXE/view?usp=sharing'
+    href='https://drive.google.com/file/d/187VKrHgfBC00k5utUit-dBvZ3_Sbzt99/view?usp=sharing'
     target='_blank'
     rel='noreferrer'
   >

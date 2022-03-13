@@ -15,7 +15,7 @@ function PlaceFinder() {
 
         <div className='place-finder-body'>
           <p>
-            The application allows users to find places around. Users are able to look up places
+            Users are able to look up places
             nearby just entering a valid zip code. Application search engine gets data from Yelp
             public API. User sign up functionalities also saving users favorites places and comments
             or see others comments are also provided. At the client side, semantic HTML5,
@@ -24,7 +24,7 @@ function PlaceFinder() {
           </p>
 
           <div className='d-flex mt-5 me-5 justify-content-center align-item-center'>
-            <div className='col-2 me-4'>
+            <div className='col-2 live'>
               <motion.a
                 whileHover={{
                   scale: 1.08,

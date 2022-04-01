@@ -127,12 +127,12 @@ export const icons = [
 
   // <img src='https://icongr.am/simple/gmail.svg?size=45&color=ffffff&colored=false' alt='email' />
   <a
-    href='https://drive.google.com/file/d/1hkbv3V2qHBsUS3_JEQAi5iXNp8VOMxpo/view?usp=sharing'
+    href='https://drive.google.com/file/d/12aZTzPcuK2f4DGj5bkwjfaiGNQPcO1Wb/view?usp=sharing'
     target='_blank'
     rel='noreferrer'
   >
     <img
-      src='https://drive.google.com/file/d/12aZTzPcuK2f4DGj5bkwjfaiGNQPcO1Wb/view?usp=sharing'
+      src='https://icongr.am/material/file-pdf-box.svg?size=40&color=ffffff'
       alt='resume'
       className='resume'
     />

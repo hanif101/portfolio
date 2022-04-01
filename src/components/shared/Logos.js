@@ -113,9 +113,7 @@ export const icons = [
     />
   </a>,
 
-  <a href='https://www.linkedin.com/in/hanifa-ahmadov/' 
-  target='_blank'
-  rel='noreferrer'>
+  <a href='https://www.linkedin.com/in/hanifa-ahmadov/' target='_blank' rel='noreferrer'>
     <img
       src='https://icongr.am/material/linkedin.svg?size=40s&color=ffffff'
       alt='linkedin'
@@ -134,7 +132,7 @@ export const icons = [
     rel='noreferrer'
   >
     <img
-      src='https://icongr.am/material/file-pdf-box.svg?size=40&color=ffffff'
+      src='https://drive.google.com/file/d/12aZTzPcuK2f4DGj5bkwjfaiGNQPcO1Wb/view?usp=sharing'
       alt='resume'
       className='resume'
     />

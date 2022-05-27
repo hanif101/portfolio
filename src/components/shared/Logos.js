@@ -127,7 +127,7 @@ export const icons = [
 
   // <img src='https://icongr.am/simple/gmail.svg?size=45&color=ffffff&colored=false' alt='email' />
   <a
-    href='https://drive.google.com/file/d/1rZHzy2Wly_kB9b-Hnkzp3G8C0olb3V5E/view?usp=sharing'
+    href='https://drive.google.com/file/d/11Q7AOCBNRTH_ogf8AwjOU8Rz5b-P8Ccr/view?usp=sharing'
     target='_blank'
     rel='noreferrer'
   >
